@@ -1,0 +1,2 @@
+[![Build Status](https://www.bitrise.io/app/522691336dc8d461/status.svg?token=38AHx2G-h5hCeVq0H2fMHQ&branch=master)](https://www.bitrise.io/app/522691336dc8d461)
+[![codecov](https://codecov.io/gh/eman6576/VinylThis/branch/master/graph/badge.svg)](https://codecov.io/gh/eman6576/VinylThis)

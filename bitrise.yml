@@ -1,0 +1,40 @@
+---
+  format_version: '4'
+  default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
+  project_type: ios
+  workflows:
+    pull-request:
+      steps:
+      - activate-ssh-key:
+          run_if: '{{getenv "SSH_RSA_PRIVATE_KEY" | ne ""}}'
+      - git-clone: {}
+      - cache-pull: {}
+      - cocoapods-install: {}
+      - xcode-test:
+          inputs:
+          - project_path: "$BITRISE_PROJECT_PATH"
+          - xcodebuild_test_options: "-enableCodeCoverage YES"
+          - should_build_before_test: 'no'
+          - scheme: "$BITRISE_SCHEME"
+      - codecov:
+          inputs:
+          - other_options: -X xcodeplist -g "Pods/"
+          - CODECOV_TOKEN: 8bd32115-9d59-46ea-acfc-85d75d8b6d8d
+      - deploy-to-bitrise-io: {}
+      - cache-push: {}
+  app:
+    envs:
+    - opts:
+        is_expand: false
+      BITRISE_PROJECT_PATH: VinylThis.xcworkspace
+    - opts:
+        is_expand: false
+      BITRISE_SCHEME: VinylThis
+    - opts:
+        is_expand: false
+      BITRISE_EXPORT_METHOD: development
+  trigger_map:
+  - push_branch: master
+    workflow: pull-request
+  - pull_request_source_branch: "*"
+    workflow: pull-request
