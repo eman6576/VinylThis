@@ -1,0 +1,6 @@
+ignore:
+  - "Pods/*"
+  - "fastlane/*"
+  - "bitrise.yml"
+  - "VinylThisTests/*"
+  - "VinylThisUITests/*"
