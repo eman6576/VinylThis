@@ -10,13 +10,20 @@
 		05390E3E81F261B59C45B5B9 /* Pods_VinylThisUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185B0637597D5FA03C634251 /* Pods_VinylThisUITests.framework */; };
 		88DF101A20311C9200B00E6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DF101920311C9200B00E6A /* AppDelegate.swift */; };
 		88DF102220311C9200B00E6A /* VinylThis.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 88DF102020311C9200B00E6A /* VinylThis.xcdatamodeld */; };
-		88DF102420311C9200B00E6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88DF102320311C9200B00E6A /* Assets.xcassets */; };
 		88DF102720311C9200B00E6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88DF102520311C9200B00E6A /* LaunchScreen.storyboard */; };
 		88DF103220311C9200B00E6A /* VinylThisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DF103120311C9200B00E6A /* VinylThisTests.swift */; };
 		88DF103D20311C9200B00E6A /* VinylThisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DF103C20311C9200B00E6A /* VinylThisUITests.swift */; };
 		88DF10532031289500B00E6A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DF10522031289500B00E6A /* main.swift */; };
 		88DF10562031290100B00E6A /* ProcessInfo+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DF10552031290100B00E6A /* ProcessInfo+Extension.swift */; };
 		88DF1059203135E000B00E6A /* TestAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DF1058203135E000B00E6A /* TestAppDelegate.swift */; };
+		88DF105B20316AF500B00E6A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DF105A20316AF500B00E6A /* Coordinator.swift */; };
+		88DF105D2031718100B00E6A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DF105C2031718100B00E6A /* AppCoordinator.swift */; };
+		88DF106220317ED100B00E6A /* SavedVinylsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DF106120317ED100B00E6A /* SavedVinylsViewController.swift */; };
+		88DF10642031850000B00E6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88DF10632031850000B00E6A /* Assets.xcassets */; };
+		88DF10682031889E00B00E6A /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DF10672031889E00B00E6A /* AlbumView.swift */; };
+		88DF106A203188BF00B00E6A /* AlbumView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88DF1069203188BF00B00E6A /* AlbumView.xib */; };
+		88DF106D203189CC00B00E6A /* AlbumImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DF106C203189CC00B00E6A /* AlbumImageView.swift */; };
+		88DF106F20318F4300B00E6A /* SwiftyBeaver+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DF106E20318F4300B00E6A /* SwiftyBeaver+Extension.swift */; };
 		9EEE827FC1750F0156195D77 /* Pods_VinylThisTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D5F6AC92B66CA484FF253AD /* Pods_VinylThisTests.framework */; };
 		D638EA0F02CE9B36B4D8DE8B /* Pods_VinylThis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F58796BB3FAFFD25CD747DD4 /* Pods_VinylThis.framework */; };
 /* End PBXBuildFile section */
@@ -46,7 +53,6 @@
 		88DF101620311C9100B00E6A /* VinylThis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VinylThis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88DF101920311C9200B00E6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88DF102120311C9200B00E6A /* VinylThis.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VinylThis.xcdatamodel; sourceTree = "<group>"; };
-		88DF102320311C9200B00E6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88DF102620311C9200B00E6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88DF102820311C9200B00E6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88DF102D20311C9200B00E6A /* VinylThisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VinylThisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +64,14 @@
 		88DF10522031289500B00E6A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		88DF10552031290100B00E6A /* ProcessInfo+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProcessInfo+Extension.swift"; sourceTree = "<group>"; };
 		88DF1058203135E000B00E6A /* TestAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppDelegate.swift; sourceTree = "<group>"; };
+		88DF105A20316AF500B00E6A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		88DF105C2031718100B00E6A /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		88DF106120317ED100B00E6A /* SavedVinylsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedVinylsViewController.swift; sourceTree = "<group>"; };
+		88DF10632031850000B00E6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88DF10672031889E00B00E6A /* AlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
+		88DF1069203188BF00B00E6A /* AlbumView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumView.xib; sourceTree = "<group>"; };
+		88DF106C203189CC00B00E6A /* AlbumImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumImageView.swift; sourceTree = "<group>"; };
+		88DF106E20318F4300B00E6A /* SwiftyBeaver+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftyBeaver+Extension.swift"; sourceTree = "<group>"; };
 		8B6334B343F205C7877DBA89 /* Pods-VinylThisTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VinylThisTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VinylThisTests/Pods-VinylThisTests.debug.xcconfig"; sourceTree = "<group>"; };
 		99B655B62FE8B091FEFE8A22 /* Pods-VinylThis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VinylThis.release.xcconfig"; path = "Pods/Target Support Files/Pods-VinylThis/Pods-VinylThis.release.xcconfig"; sourceTree = "<group>"; };
 		CBBAB2D6BDB61EE3E0B9193A /* Pods-VinylThisTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VinylThisTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VinylThisTests/Pods-VinylThisTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -147,11 +161,11 @@
 				88DF104B203126D200B00E6A /* ViewModels */,
 				88DF104C203126D900B00E6A /* Models */,
 				88DF10512031287C00B00E6A /* Extensions */,
-				88DF102320311C9200B00E6A /* Assets.xcassets */,
 				88DF101920311C9200B00E6A /* AppDelegate.swift */,
 				88DF1058203135E000B00E6A /* TestAppDelegate.swift */,
 				88DF10522031289500B00E6A /* main.swift */,
 				88DF102820311C9200B00E6A /* Info.plist */,
+				88DF10632031850000B00E6A /* Assets.xcassets */,
 			);
 			path = VinylThis;
 			sourceTree = "<group>";
@@ -177,6 +191,8 @@
 		88DF104A203126C900B00E6A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				88DF105E203175A300B00E6A /* Subviews */,
+				88DF105F203175B300B00E6A /* ViewControllers */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -208,6 +224,8 @@
 		88DF104E203126FA00B00E6A /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				88DF105A20316AF500B00E6A /* Coordinator.swift */,
+				88DF105C2031718100B00E6A /* AppCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -231,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				88DF10552031290100B00E6A /* ProcessInfo+Extension.swift */,
+				88DF106E20318F4300B00E6A /* SwiftyBeaver+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -241,6 +260,56 @@
 				88DF102020311C9200B00E6A /* VinylThis.xcdatamodeld */,
 			);
 			path = EntityModels;
+			sourceTree = "<group>";
+		};
+		88DF105E203175A300B00E6A /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				88DF106B203189A500B00E6A /* UIImageViews */,
+				88DF10652031881C00B00E6A /* UIViews */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		88DF105F203175B300B00E6A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				88DF106020317E9800B00E6A /* SavedVinylsViewControllers */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		88DF106020317E9800B00E6A /* SavedVinylsViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				88DF106120317ED100B00E6A /* SavedVinylsViewController.swift */,
+			);
+			path = SavedVinylsViewControllers;
+			sourceTree = "<group>";
+		};
+		88DF10652031881C00B00E6A /* UIViews */ = {
+			isa = PBXGroup;
+			children = (
+				88DF10662031886600B00E6A /* AlbumViews */,
+			);
+			path = UIViews;
+			sourceTree = "<group>";
+		};
+		88DF10662031886600B00E6A /* AlbumViews */ = {
+			isa = PBXGroup;
+			children = (
+				88DF10672031889E00B00E6A /* AlbumView.swift */,
+				88DF1069203188BF00B00E6A /* AlbumView.xib */,
+			);
+			path = AlbumViews;
+			sourceTree = "<group>";
+		};
+		88DF106B203189A500B00E6A /* UIImageViews */ = {
+			isa = PBXGroup;
+			children = (
+				88DF106C203189CC00B00E6A /* AlbumImageView.swift */,
+			);
+			path = UIImageViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,8 +429,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88DF106A203188BF00B00E6A /* AlbumView.xib in Resources */,
+				88DF10642031850000B00E6A /* Assets.xcassets in Resources */,
 				88DF102720311C9200B00E6A /* LaunchScreen.storyboard in Resources */,
-				88DF102420311C9200B00E6A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,12 +556,20 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-VinylThis/Pods-VinylThis-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Koloda/Koloda.framework",
+				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/SGSwiftyBind/SGSwiftyBind.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyBeaver/SwiftyBeaver.framework",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Koloda.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SGSwiftyBind.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyBeaver.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -552,10 +630,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				88DF101A20311C9200B00E6A /* AppDelegate.swift in Sources */,
+				88DF106220317ED100B00E6A /* SavedVinylsViewController.swift in Sources */,
 				88DF1059203135E000B00E6A /* TestAppDelegate.swift in Sources */,
+				88DF10682031889E00B00E6A /* AlbumView.swift in Sources */,
+				88DF106F20318F4300B00E6A /* SwiftyBeaver+Extension.swift in Sources */,
+				88DF105B20316AF500B00E6A /* Coordinator.swift in Sources */,
 				88DF10562031290100B00E6A /* ProcessInfo+Extension.swift in Sources */,
 				88DF10532031289500B00E6A /* main.swift in Sources */,
+				88DF106D203189CC00B00E6A /* AlbumImageView.swift in Sources */,
 				88DF102220311C9200B00E6A /* VinylThis.xcdatamodeld in Sources */,
+				88DF105D2031718100B00E6A /* AppCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

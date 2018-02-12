@@ -5,8 +5,12 @@ target 'VinylThis' do
   use_frameworks!
 
   pod 'Kingfisher', '~> 4.1.0'
+  pod 'Koloda', '~> 4.3.1'
+  pod 'PureLayout'
   pod 'SGSwiftyBind'
+  pod 'SwiftyBeaver'
   pod 'SwiftLint'
+  pod 'UIImageColors'
 
   target 'VinylThisTests' do
     inherit! :search_paths
